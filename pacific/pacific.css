@@ -1,0 +1,55 @@
+/* Setting Global styles for the document  */
+body {
+  background-color: #ffffff;
+  color: #666666;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* Styles for the header element  */
+header {
+  background-color: #002171;
+  color: #ffffff;
+}
+
+/* Styles for the h1 element */
+h1 {
+  line-height: 200%;
+}
+
+/* Styles for the nav element  */
+nav {
+  font-weight: bold;
+  background-color: #bbdefb;
+}
+
+/* Styles for the h2 element */
+h2 {
+  font-family: Georgia, serif;
+  color: #1976d2;
+}
+
+/* Styles for the dt element  */
+dt {
+  color: #002171;
+  font-weight: bold;
+}
+
+/* Styles for a class named resort */
+.resort {
+  font-size: 1.2em;
+  color: #1976d2;
+}
+
+/* Styles for the footer element  */
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+/* CENTER PAGE LAYOUT WITH CSS.  */
+#wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
