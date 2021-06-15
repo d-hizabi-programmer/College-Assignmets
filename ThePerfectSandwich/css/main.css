@@ -36,7 +36,7 @@ nav {
   grid-area: nav;
   /* padding: 0.5em;
   margin: 0.5em; */
-  font-family: courier, monospace;
+  font-family: courier, mecitonospace;
   font-weight: bold;
   color: #48220d;
   font-size: 1em;
@@ -61,8 +61,75 @@ nav a {
 /* Banner image setting */
 #banner {
   grid-area: banner;
+  width: 100%;
+  /* border: 2px solid green; */
 }
 #banner img {
   width: 100%;
-  height: 60%;
+  max-height: 70vh;
+}
+
+main {
+  grid-area: main;
+  /* border: 2px solid red; */
+}
+main h2 {
+  /* padding: 00.5em; */
+  margin: 0.5em;
+  font-family: courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  color: #48220d;
+  font-size: 1.7em;
+}
+
+main p {
+  padding: 00.5em;
+  margin: 0.5em;
+  font-family: courier, monospace;
+  text-align: justify;
+  color: #48220d;
+  font-size: 1.2em;
+  letter-spacing: 0.2;
+  line-height: 1.5em;
+}
+
+#gallaryImages {
+  margin: 1em;
+  padding: 00.5em;
+  display: grid;
+  grid-template-areas:
+    "kheer1 kheer2 kheer3"
+    "kheer4 kheer5 kheer6";
+}
+#gallaryImages figure {
+  height: 33%;
+  /* width: 33%; */
+  /* border: 2px solid red; */
+  margin: 00.5em;
+  padding: 00.5em;
+}
+#gallaryImages img {
+  height: 50vh;
+  width: 100%;
+  box-shadow: 0.5em 0.5em 0.5em rgb(37, 37, 37);
+}
+
+figcaption {
+  /* border: 2px solid red; */
+  font-family: courier, monospace;
+  text-align: center;
+  color: #48220d;
+  font-size: 1.2em;
+  padding-top: 00.5em;
+}
+
+#ingredients li {
+  padding-top: 0.5em;
+  font-family: courier, monospace;
+  text-align: center;
+  color: #48220d;
+  font-size: 1.2em;
+  letter-spacing: 0.2;
+  /* line-height: 1em; */
 }
