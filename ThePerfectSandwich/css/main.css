@@ -16,7 +16,7 @@ body {
     "header header  nav"
     "banner banner  banner"
     "main main  main"
-    "footer footer  footer";
+    "footer footer footer";
 }
 
 /* header selector*/
@@ -58,6 +58,9 @@ nav a {
   /* border: 2px solid rgb(34, 33, 33); */
 }
 
+nav a:hover {
+  border-bottom: 2px solid #4b2311;
+}
 /* Banner image setting */
 #banner {
   grid-area: banner;
@@ -102,6 +105,7 @@ main p {
     "kheer1 kheer2 kheer3"
     "kheer4 kheer5 kheer6";
 }
+
 #gallaryImages figure {
   height: 33%;
   /* width: 33%; */
@@ -112,7 +116,9 @@ main p {
 #gallaryImages img {
   height: 50vh;
   width: 100%;
-  box-shadow: 0.5em 0.5em 0.5em rgb(37, 37, 37);
+}
+#gallaryImages img:hover {
+  box-shadow: 0.5em 0.5em 1em rgb(37, 37, 37);
 }
 
 figcaption {
@@ -132,4 +138,26 @@ figcaption {
   font-size: 1.2em;
   letter-spacing: 0.2;
   /* line-height: 1em; */
+}
+
+#direction {
+  margin: 0.5em 1em 0.5em 3em;
+  padding: 0.5em;
+}
+#direction ol li {
+  font-family: courier, monospace;
+  text-align: justify;
+  color: #48220d;
+  font-size: 1.2em;
+  list-style: decimal;
+  /* letter-spacing: 0.2; */
+}
+footer {
+  /* padding: 00.5em; */
+  margin: 00.5em;
+  grid-area: footer;
+  text-align: center;
+  color: #48220d;
+  font-size: 1.2em;
+  /* border: 2px solid red; */
 }
