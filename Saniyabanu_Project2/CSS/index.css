@@ -162,15 +162,14 @@ nav li a:visited {
     display: inline;
     margin-top: auto;
   }
-  /* nav svg:hover {
-    display: none;
-  } */
+
   .dropdown {
     margin-left: auto;
   }
   .dropdown-content {
+    background-color: #e4e4e4;
     margin-left: -2em;
-    margin-top: -2em;
+    margin-top: -2.5em;
   }
   .dropdown-content a {
     text-align: right;
@@ -179,7 +178,7 @@ nav li a:visited {
 
   #close:hover {
     color: #085469;
-    /* background-color: transparent; */
+    background-color: transparent;
   }
 
   /* header  */
