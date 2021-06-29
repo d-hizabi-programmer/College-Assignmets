@@ -6,7 +6,6 @@
 
 /*Body Selector...*/
 body {
-  /* background-color: #e4e4e4; */
   background-image: url("../Images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -51,26 +50,33 @@ nav {
   align-items: center;
 }
 
+/* Logo image  */
 nav img {
   margin: 0.5em;
   height: 3.5em;
   width: 2.5em;
 }
+
+/* navigation ul   */
 nav ul {
   margin-left: auto;
   /* border: 2px solid red; */
 }
+
+/* navigation  menu items-li contained within ul */
 nav li {
   display: inline;
   list-style: none;
   padding-left: 1em;
 }
 
+/* navigation's <a> tag within li and header's Read more text having <a> tag*/
 nav a,
 header a {
   text-decoration: none;
 }
-/*Navigation Dropdown items*/
+
+/*Navigation's product's Dropdown items contains- living room, dining room, bedroom etc.*/
 .dropdown {
   display: inline;
 }
@@ -99,6 +105,7 @@ header a {
   display: block;
 }
 
+/* hamburger icon- currently invisible. will visible on mobile view */
 nav svg {
   display: none;
   color: #085469;
@@ -129,31 +136,31 @@ nav li a:visited {
 
 /* for tablet view */
 @media only screen and (max-width: 1024px) {
+  /* body selector for adjusting backgroung image in tablet view */
   body {
     background-size: 120% 100%;
     align-items: center;
     justify-content: center;
   }
-  /* Navigation */
-  /* nav img {
-    margin: 0.5em;
-    height: 6em;
-    width: 5em;
-  } */
 
+  /* header part */
   header {
     width: 90%;
   }
 }
 
+/* for mobile view */
 @media only screen and (max-width: 768px) {
+  /* body selector for adjusting backgroung image in mobile view */
   body {
     background-size: 200% 100%;
-
     align-items: center;
     justify-content: center;
   }
+
   /* Navigation */
+
+  /* in mobile mode, whole menu within ul will not be visible. instead, hamburger icon will b shown */
   nav ul {
     display: none;
   }
@@ -162,14 +169,14 @@ nav li a:visited {
     display: inline;
     margin-top: auto;
   }
-
+  /* for hamburger menu that contains home, products, about and contact links */
   .dropdown {
     margin-left: auto;
   }
   .dropdown-content {
     background-color: #e4e4e4;
-    margin-left: -2em;
-    margin-top: -2.5em;
+    margin-left: -3em;
+    margin-top: -3em;
   }
   .dropdown-content a {
     text-align: right;
@@ -179,6 +186,41 @@ nav li a:visited {
   #close:hover {
     color: #085469;
     background-color: transparent;
+  }
+
+  /* for products dropdown menu contains kithen, bedroom etc */
+  .hamDropdown {
+    display: inline;
+  }
+
+  .hamDropdown-content {
+    display: none;
+    margin-left: -6.5em;
+    margin-top: -2.2em;
+    position: absolute;
+    background-color: transparent;
+    font-weight: normal;
+    padding: 00.2em;
+    background-color: #e4e4e4;
+    /* border: 1px solid #085469; */
+    box-shadow: 0.1em 0.1em 0.5em #085469;
+  }
+  .hamDropdown-content a {
+    color: #085469;
+    padding: 00.1em;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    text-align: right;
+    /* font-size: 1em; */
+  }
+  .hamDropdown-content a:hover {
+    background-color: #085469;
+    color: #e4e4e4;
+  }
+
+  .hamDropdown:hover .hamDropdown-content {
+    display: block;
   }
 
   /* header  */
