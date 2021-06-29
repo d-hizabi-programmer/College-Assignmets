@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-blend-mode: lighten;
+  /* background-blend-mode: lighten; */
 }
 
 /* Heading fonts */
@@ -39,6 +39,8 @@ body {
   width: 90%;
   height: 90%;
   box-shadow: 0.4em 0.4em 1.2em #737c7b;
+  display: flex;
+  flex-direction: column;
 }
 
 /*---------------------------------------navigation Part---------------------------------------------*/
@@ -115,10 +117,11 @@ nav svg {
 main {
   width: 80%;
   margin: 5em 2em;
+  /* border: 2px solid red; */
 }
 
 main h2,
-p {
+main p {
   padding: 0.5em;
 }
 
@@ -130,6 +133,30 @@ nav li a:hover {
 
 nav li a:visited {
   border: 1px solid #085469;
+}
+
+/*--------------------------------------- footer---------------------------------------------*/
+footer {
+  margin-top: auto;
+  margin-left: 2em;
+  width: 90%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+.socialMedia {
+  display: inline;
+  margin-left: auto;
+  margin-top: auto;
+  /* border: 2px solid red; */
+}
+
+.socialMedia a {
+  color: #085469;
+  margin-left: 0.5em;
+  font-size: 1.75em;
+  /* border: 2px solid red; */
 }
 
 /*--------------------------------------- media query---------------------------------------------*/
@@ -146,6 +173,10 @@ nav li a:visited {
   /* main part */
   main {
     width: 90%;
+    /* border: 2px solid red; */
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -153,11 +184,15 @@ nav li a:visited {
 @media only screen and (max-width: 768px) {
   /* body selector for adjusting backgroung image in mobile view */
   body {
-    background-size: 200% 100%;
+    background-size: 200% 110%;
     align-items: center;
     justify-content: center;
+    /* height: max-content; */
   }
 
+  #wrapper {
+    height: max-content;
+  }
   /* Navigation */
 
   /* in mobile mode, whole menu within ul will not be visible. instead, hamburger icon will b shown */
@@ -226,5 +261,30 @@ nav li a:visited {
   /* main  */
   main {
     width: 90%;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid; */
+  }
+
+  /* footer */
+  footer {
+    /* margin: 0em; */
+    /* margin-top: auto; */
+    margin: auto;
+    padding: 0em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .socialMedia {
+    margin-left: 0em;
+    display: block;
+    /* border: 2px solid; */
+    /* align-self: center; */
+    /* margin-left: auto; */
   }
 }
