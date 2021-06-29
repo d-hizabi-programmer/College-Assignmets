@@ -70,9 +70,9 @@ nav li {
   padding-left: 1em;
 }
 
-/* navigation's <a> tag within li and header's Read more text having <a> tag*/
+/* navigation's <a> tag within li and main's Read more text having <a> tag*/
 nav a,
-header a {
+main a {
   text-decoration: none;
 }
 
@@ -111,13 +111,13 @@ nav svg {
   color: #085469;
 }
 
-/*---------------------------------------Header Part---------------------------------------------*/
-header {
+/*---------------------------------------main Part---------------------------------------------*/
+main {
   width: 80%;
   margin: 5em 2em;
 }
 
-header h2,
+main h2,
 p {
   padding: 0.5em;
 }
@@ -143,8 +143,8 @@ nav li a:visited {
     justify-content: center;
   }
 
-  /* header part */
-  header {
+  /* main part */
+  main {
     width: 90%;
   }
 }
@@ -223,8 +223,8 @@ nav li a:visited {
     display: block;
   }
 
-  /* header  */
-  header {
+  /* main  */
+  main {
     width: 90%;
   }
 }
