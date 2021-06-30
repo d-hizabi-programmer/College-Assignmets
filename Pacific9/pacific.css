@@ -233,6 +233,8 @@ textarea {
   #trailhero {
     background-size: 100% 100%;
   }
+
+  /* reservation page */
   form {
     width: 60%;
     display: grid;
