@@ -77,7 +77,7 @@ footer {
 @media only screen and (max-width: 1024px) {
   /* body selector for adjusting backgroung image in tablet view */
   body {
-    background-size: 120% 100%;
+    background-size: 150% 100%;
     align-items: center;
     justify-content: center;
   }
