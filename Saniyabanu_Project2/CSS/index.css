@@ -8,7 +8,8 @@
 body {
   background-image: url("../Images/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -39,6 +40,8 @@ body {
   width: 90%;
   height: 90%;
   box-shadow: 0.4em 0.4em 1.2em #737c7b;
+  /* overflow: auto; */
+
   display: flex;
   flex-direction: column;
 }
@@ -184,14 +187,14 @@ footer {
 @media only screen and (max-width: 768px) {
   /* body selector for adjusting backgroung image in mobile view */
   body {
-    background-size: 200% 110%;
+    background-size: 200% 120%;
     align-items: center;
     justify-content: center;
-    /* height: max-content; */
   }
 
   #wrapper {
-    height: max-content;
+    margin: 4em 3em;
+    height: fit-content;
   }
   /* Navigation */
 
