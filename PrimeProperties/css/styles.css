@@ -45,11 +45,13 @@ h1 {
 
 h2 {
   color: #003366;
+  margin: 0.5em 0em 0.5em 0em;
 }
 
 h3 {
   color: #006600;
   padding-top: 0.5em;
+  margin: 0.5em 0em 1em 0em;
 }
 
 /* navigation */
@@ -108,8 +110,9 @@ main p {
 }
 dd {
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 200%;
+  margin-left: 2.7em;
 }
 
 .contact {
@@ -137,4 +140,13 @@ footer {
 
 img {
   border-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+header,
+nav,
+main,
+footer {
+  display: block;
 }
