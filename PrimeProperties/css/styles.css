@@ -56,7 +56,6 @@ h3 {
 nav {
   /* grid-area: nav; */
   grid-column: 1;
-
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -94,8 +93,48 @@ nav ul {
 main {
   grid-column: 2;
   /* grid-area: main; */
+  margin-left: 1.5em;
+  padding: 0em 1em 1em 0em;
 }
+
+main ul {
+  list-style-position: inside;
+  margin: 1em;
+  padding-left: 1em;
+}
+
+main p {
+  line-height: 200%;
+}
+dd {
+  font-style: italic;
+  font-size: 0.9em;
+  line-height: 200%;
+}
+
+.contact {
+  font-weight: bold;
+  font-size: 0.9em;
+  font-family: "Times New Roman", serif;
+}
+
+.floatleft {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+/* footer */
 footer {
   grid-column: 2;
+
   /* grid-area: footer; */
+  font-size: 0.6em;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+img {
+  border-style: none;
 }
